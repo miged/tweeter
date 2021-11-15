@@ -30,7 +30,8 @@ $(document).ready(function() {
   };
 
   const renderTweets = (tweets) => {
-    for (const tweet of tweets) {
+    $('#tweets-container').empty();
+    for (const tweet of tweets.reverse()) {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').append($tweet);
     }
@@ -45,7 +46,20 @@ $(document).ready(function() {
 
   $('#tweet-form').submit(function(event) {
     event.preventDefault();
+    const text = $('#tweet-text').val();
+
+    if (!text) {
+      window.alert("Error: Cannot post empty tweet.");
+      return;
+    }
+
+    if (text.length > 140) {
+      window.alert("Error: Tweet is too long.");
+      return;
+    }
+
     const formData = $('#tweet-form').serialize();
     $.post("/tweets", formData);
+    loadTweets();
   });
 });
