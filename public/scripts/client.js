@@ -59,7 +59,10 @@ $(document).ready(function() {
     }
 
     const formData = $('#tweet-form').serialize();
-    $.post("/tweets", formData);
-    loadTweets();
+    $.ajax("/tweets", {
+      method: "POST",
+      data: formData,
+      success: loadTweets
+    });
   });
 });
