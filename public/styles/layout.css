@@ -48,16 +48,26 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 1em;
 }
 
 .tweet header .user {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .tweet header .avatar {
-  margin: 0em 0.5em
+  margin-right: 0.5em;
+}
+
+.tweet header .userhandle {
+  font-weight: 400;
+}
+
+.tweet .content {
+  margin-bottom: 1em;
 }
 
 .tweet footer {
