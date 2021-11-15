@@ -1,0 +1,36 @@
+.new-tweet {
+  width: 100%;
+}
+
+#tweet-form {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+#tweet-text {
+  background: transparent;
+  font-weight: 600;
+  border: 0 none;
+  border-bottom: 3px solid;
+  outline: none;
+}
+
+#below-form {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tweet-button {
+  background-color: #2d45af;
+  color: #ffffff;
+  border: 0 none;
+  padding: 7px 15px;
+  font-family: 'bungee';
+}
+
+.counter {
+  font-family: 'bungee';
+  font-size: 28px;
+}
