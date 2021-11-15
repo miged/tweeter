@@ -9,12 +9,12 @@ nav {
   z-index: 9;
 }
 
-#site-name {
+nav #site-name {
   font-family: 'bungee';
   font-size: 38px;
 }
 
-#write {
+nav #write {
   flex-direction: column;
   text-align: center;
 }

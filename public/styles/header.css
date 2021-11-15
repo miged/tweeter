@@ -1,4 +1,4 @@
-header {
+header#user-header {
   height: 400px;
   background-color: #8956cc;
   display: flex;
@@ -8,6 +8,6 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
 }
 
-#user-name {
+header #user-name {
   color: #ffffff;
 }

@@ -2,13 +2,13 @@
   width: 100%;
 }
 
-#tweet-form {
+.new-tweet #tweet-form {
   display: flex;
   flex-direction: column;
   font-weight: 600;
 }
 
-#tweet-text {
+.new-tweet #tweet-text {
   background: transparent;
   font-weight: 600;
   border: 0 none;
@@ -16,13 +16,13 @@
   outline: none;
 }
 
-#below-form {
+.new-tweet #below-form {
   padding-top: 1em;
   display: flex;
   justify-content: space-between;
 }
 
-#tweet-button {
+.new-tweet #tweet-button {
   background-color: #2d45af;
   color: #ffffff;
   border: 0 none;
@@ -30,7 +30,7 @@
   font-family: 'bungee';
 }
 
-.counter {
+.new-tweet .counter {
   font-family: 'bungee';
   font-size: 28px;
 }
