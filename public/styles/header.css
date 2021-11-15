@@ -1,0 +1,13 @@
+header {
+    height: 400px;
+    background-color: #8956cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3b3e46;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+}
+
+#user-name {
+    color: #ffffff;
+}
