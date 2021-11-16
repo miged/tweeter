@@ -51,20 +51,25 @@ $(document).ready(function() {
 
   loadTweets();
 
+  // Tweet button behaviour
   $('#tweet-form').submit(function(event) {
     event.preventDefault();
     const text = $('#tweet-text').val();
+    $('#error').slideUp(100);
 
     if (!text) {
-      window.alert("Error: Cannot post empty tweet.");
+      $('#error-message').text("Cannot post an empty tweet!");
+      $('#error').slideDown();
       return;
     }
 
     if (text.length > 140) {
-      window.alert("Error: Tweet is too long.");
+      $('#error-message').text("Tweet is too long! Keep it under 140 characters.");
+      $('#error').slideDown();
       return;
     }
 
+    // Submit form
     const formData = $('#tweet-form').serialize();
     $.ajax("/tweets", {
       method: "POST",
@@ -72,4 +77,6 @@ $(document).ready(function() {
       success: loadTweets
     });
   });
+
+  $('#error').hide();
 });
