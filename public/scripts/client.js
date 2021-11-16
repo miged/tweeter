@@ -1,20 +1,27 @@
+/* eslint-disable no-undef */
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
+  const escape = (str) => {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = (data) => {
     const html = `
       <article class="tweet">
         <header>
           <div class="user">
-            <img class="avatar" src=${data.user.avatars}>
-            <div class="username">${data.user.name}</div>
+            <img class="avatar" src=${escape(data.user.avatars)}>
+            <div class="username">${escape(data.user.name)}</div>
           </div>
-          <div class="userhandle">${data.user.handle}</div>
+          <div class="userhandle">${escape(data.user.handle)}</div>
         </header>
-        <div class="content">${data.content.text}</div>
+        <div class="content">${escape(data.content.text)}</div>
         <footer>
           <div class="time">${timeago.format(data.created_at)}</div>
           <div class="actions">
