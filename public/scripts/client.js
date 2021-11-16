@@ -12,7 +12,7 @@ $(document).ready(function() {
   };
 
   const createTweetElement = (data) => {
-    const html = `
+    return `
       <article class="tweet">
         <header>
           <div class="user">
@@ -32,8 +32,6 @@ $(document).ready(function() {
         </footer>
       </article>
     `;
-
-    return html;
   };
 
   const renderTweets = (tweets) => {
