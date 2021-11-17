@@ -11,12 +11,12 @@ nav {
   position: absolute;
 }
 
-nav #site-name {
+nav .site-name {
   font-family: 'bungee';
   font-size: 38px;
 }
 
-nav #write {
+nav .write {
   flex-direction: column;
   text-align: center;
 }

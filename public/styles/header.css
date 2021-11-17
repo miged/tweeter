@@ -1,4 +1,4 @@
-header#user-header {
+.user-header {
   height: 520px;
   background-color: #8956cc;
   display: flex;
@@ -12,12 +12,12 @@ header#user-header {
   position: relative;
 }
 
-header #user-name {
+.user-header .user-name {
   color: #ffffff;
 }
 
 @media only screen and (min-width: 1024px) {
-  header#user-header {
+  .user-header {
     height: 17em;
     width: 500px;
     max-width: 500px;
