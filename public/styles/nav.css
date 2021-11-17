@@ -16,9 +16,12 @@ nav .site-name {
   font-size: 38px;
 }
 
-nav .write {
+nav #write {
   flex-direction: column;
   text-align: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 nav i {
@@ -30,4 +33,20 @@ nav i {
     background-color: #4056A1;
     position: fixed;
   }
+}
+
+/* bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(25%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+nav #write:hover {
+  animation: bounce 1s infinite;
 }

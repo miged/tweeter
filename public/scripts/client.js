@@ -76,5 +76,18 @@ $(document).ready(function() {
     });
   });
 
+  // Write button behaviour
+  let formEnabled = false;
+  $('#tweet-form').hide();
+  $('#write').on('click', function(event) {
+    if (formEnabled) {
+      $('#tweet-form').slideUp();
+      formEnabled = false;
+    } else {
+      $('#tweet-form').slideDown();
+      formEnabled = true;
+    }
+  });
+
   $('#error').hide();
 });
