@@ -25,9 +25,9 @@ $(document).ready(function() {
         <footer>
           <div class="time">${timeago.format(data.created_at)}</div>
           <div class="actions">
-            <a href="/"><i class="fas fa-flag"></i></a>
-            <a href="/"><i class="fas fa-retweet"></i></a>
-            <a href="/"><i class="fas fa-heart"></i></a>
+            <a href="/#"><i class="fas fa-flag"></i></a>
+            <a href="/#"><i class="fas fa-retweet"></i></a>
+            <a href="/#"><i class="fas fa-heart"></i></a>
           </div>
         </footer>
       </article>
@@ -85,6 +85,7 @@ $(document).ready(function() {
       formEnabled = false;
     } else {
       $('#tweet-form').slideDown();
+      $('#tweet-text').focus();
       formEnabled = true;
     }
   });
