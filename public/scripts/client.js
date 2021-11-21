@@ -74,6 +74,9 @@ $(document).ready(function() {
       data: formData,
       success: loadTweets
     });
+
+    // clear form
+    $('#tweet-text').val("");
   });
 
   // Write button behaviour
