@@ -8,6 +8,8 @@ Tweeter is a simple, single-page Twitter clone.
 
 !["Screenshot of mobile view"](docs/mobile.png)
 
+!["Screenshot of mobile view with an error"](docs/mobile_error.png)
+
 ## Getting Started
 
 - Install all dependencies with `npm install`
