@@ -83,6 +83,7 @@ main {
 
 .tweet .content {
   margin-bottom: 1em;
+  overflow-wrap: break-word;
 }
 
 .tweet footer {
